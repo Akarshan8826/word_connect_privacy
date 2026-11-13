@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: word-connect-privacy
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install --omit=dev --no-package-lock
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production

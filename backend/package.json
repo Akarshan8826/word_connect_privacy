@@ -1,0 +1,13 @@
+{
+  "name": "word-connect-privacy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Privacy policy website and health endpoint for Word Connect",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "keepalive": "node keep-alive.js"
+  }
+}
